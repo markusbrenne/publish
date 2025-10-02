@@ -3,37 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Babolig Styling</title>
+  <title>BA Interiør & Boligstyling</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
 </head>
 <body>
-
-
-  <nav>
-    <img src="img/ba.png" alt="Babolig Styling Logo" class="logo">
-    <div class="nav-links">
+  
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" />
     </div>
-  </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav" id="mobileMenu">
+      <a href="#about">Om oss</a>
+      <a href="#galleri">Bildegalleri</a>
+      <a href="priser.html">Priser</a>
+      <a href="#kontakt">Kontakt</a>
+      <div class="mobile-social-icons">
+        <a href="https://www.instagram.com/baboligstyling/" target="_blank">
+          <img src="images/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/p/BA-Interi%C3%B8rBoligstyling-100063524662650/" target="_blank">
+          <img src="images/facebook.svg" alt="Facebook">
+        </a>
+      </div>
+    </nav>
+  </header>
 
-
-  <section id="priser">
-    <h2>Priser</h2>
-    <ul>
-    </ul>
-  </section>
-
-  <section id="galleri">
-    <h2>Galleri</h2>
-    <div class="gallery">
+  <section id="intro" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <h1>BA Interiør & Boligstyling</h1>
+      <br>
+      <a href="#kontakt" class="cta-btn">Kontakt oss</a>
     </div>
   </section>
 
-  <section id="kontakt">
-    <h2>Kontakt oss</h2>
+<section id="about" class="info-section">
+  <div class="info-wrapper">
+    <div class="info-text">
+      <h2>Om oss</h2>
+      <p>
+        <strong>BA Boligstyling</strong> har siden 2018 hjulpet boligeiere med å presentere hjemmet sitt fra sin beste side. Tjenestene omfatter fullstyling, delstyling og utestyling – tilpasset boligtype, målgruppe og ønsket uttrykk.
+      <p>
+        Bak selskapet står Elin Brenne Johannessen, med solid erfaring innen interiør, boligstyling og visuell presentasjon. Smakfullt og moderne interiør brukes til å skape en harmonisk atmosfære som fremhever boligens potensial og gjør den mer attraktiv i markedet.
+      </p>
+      <p>
+        Smakfullt og moderne interiør løfter boligens helhetsinntrykk, skaper en harmonisk atmosfære og gjør det enklere for interessenter å se seg selv i hjemmet. Målet er å fremheve boligens fulle potensial, slik at førsteinntrykket blir best mulig, interessen øker – og salgsprisen kan maksimeres.
+      </p>
+    </div>
+    <div class="info-img">
+      <img src="images/omoss.jpeg" alt="Om oss">
+    </div>
+  </div>
+</section>
 
+<section id="why" class="info-section">
+  <div class="info-wrapper reverse">
+    <div class="info-text">
+      <h2>Hvorfor boligstyling?</h2>
+      <p>
+        Et godt førsteinntrykk er avgjørende når en bolig skal selges. Styling fremhever rommenes kvaliteter, gir en helhetlig presentasjon og gjør det enklere for interessenter å se seg selv i hjemmet. Erfaring viser at boliger som styles profesjonelt ofte skiller seg ut i markedet, får flere interessenter – og oppnår en bedre salgspris.
+      </p>
+      <p>
+        Skreddersydde løsninger og nøye utvalgte møbler, farger og detaljer skaper den rette stemningen og fremhever rommenes funksjon. Små grep kan gjøre en stor forskjell, og styling kan være avgjørende for å sikre et godt resultat i salgsprosessen.
+      </p>
+      <p>
+        <i>Har du en bolig du skal selge? Ta kontakt med oss for en gratis og uforpliktende vurdering.</i>
+      </p>
+    </div>
+        <div class="info-img">
+      <img src="images/hvorfor.jpeg" alt="Hvorfor boligstyling">
+    </div>
+  </div>
+</section>
+
+<section id="galleri" class="gallery">
+    <h2>Bildegalleri</h2>
+    <div class="carousel">
+      <button class="carousel-arrow left" aria-label="Forrige bilde">&#10094;</button>
+      <img id="carousel-main" src="images/gallery1.jpg" alt="Styling 1" />
+      <button class="carousel-arrow right" aria-label="Neste bilde">&#10095;</button>
+    </div>
+    <div class="carousel-thumbs">
+    </div>
+    <div id="carousel-lightbox" class="carousel-lightbox">
+      <button class="carousel-arrow left lightbox-arrow" aria-label="Forrige bilde">&#10094;</button>
+      <img id="lightbox-img" src="" alt="Fullskjerm bilde" />
+      <button class="carousel-arrow right lightbox-arrow" aria-label="Neste bilde">&#10095;</button>
+      <span class="lightbox-close" title="Lukk">&times;</span>
+    </div>
   </section>
 
-  <footer>
+  <footer class="footer" id="kontakt">
+    <div class="footer-wrapper">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Logo">
+        <div style="width:100%;text-align:left;font-size:0.9em;color:#888;margin:8px 0 0 0;">
+          &copy; 2025 BA Interiør &amp; Boligstyling
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h4>Kontakt</h4>
+        <p>
+          +47 975 15 400<br>
+        <a href="mailto:elinbrennej@gmail.com">elinbrennej@gmail.com</a>
+        </p>
+      </div>
+      <div class="footer-social">
+        <h4>Følg meg</h4>
+        <p>
+          <a href="#">Instagram</a><br>
+          <a href="#">Facebook</a>
+        </p>
+      </div>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
+</html>
